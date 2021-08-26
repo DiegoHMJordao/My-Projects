@@ -1,0 +1,233 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--box1Color: white ;
+	--box2Color: #0659ad;
+}
+
+html, body {
+	height: 100%;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+	transition-duration: 5000ms;
+}
+
+.wpp-logo {
+	position: fixed;
+	left: 30px;
+	bottom: 0px;
+	width: 80px;
+	padding: 10px 0;
+	animation-name: animacao;
+	animation-duration: 1500ms;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+	50% {
+	bottom: 20px;
+	}
+
+}
+
+.top img{
+	position: fixed;
+	width: 60px;
+	bottom: 100px;
+	right: 30px;
+}
+
+body {
+	font-family: 'Playfair Display', serif;
+}
+
+header {
+	display: flex;
+	background-color: black;
+	width: 100%;
+	justify-content: space-between;
+	padding: 0 15px;
+	align-items: center;
+	box-shadow: 0 0 15px black;
+	position: sticky;
+	top: 0;
+}
+
+h1 {
+	color: var(--box1Color);
+}
+
+h1 span:first-child {
+	color: var(--box2Color);
+}
+
+h1 span:last-child {
+	letter-spacing: -1px;
+	font-size: 18px;
+}
+
+.menu li {
+	display: inline-flex;
+	flex-flow: row wrap;
+}
+
+.menu li:hover {
+	background: var(--box2Color);
+	transition-duration: 1000ms;
+}
+
+.menu li a {
+	color: white;
+	padding: 14px;
+}
+
+.box1 {	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100vw;
+	height: 50vh;
+	background-color: var(--box1Color);
+}
+
+.box1 img {
+	width: 300px;
+}
+
+.content1 h2 {
+	margin-bottom: 40px ;
+	font-size: 28px;
+}
+
+.content1 li {
+	list-style: none;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+.content1 li::before {
+	background-image: url(tickbox.png);
+	background-size: cover;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	content: "";
+	align-items: center;
+	margin-right: 5px;
+}
+
+.box2 {
+	width: 100vw;
+	background: var(--box2Color);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.box2 h2 {
+	padding: 30px 0;
+	font-size: 35px;
+	color: white;
+}
+
+.photos-gallery ul {
+	display:flex;	
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.medico {
+	width: 200px;
+	height: 200px;
+	opacity: 0.7;
+	margin: 30px 70px;
+	border-radius: 50%;	
+}
+
+.medico:hover {
+	opacity: 1.0;
+	transition-duration: 500ms;
+	box-shadow: 0 0 25px white;	
+}
+
+.box3 {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	width: 100vw;
+	background-color: var(--box1Color);
+}
+
+.content-box3 {
+	margin: 30px 0;
+}
+.box3 p {
+	margin: 15px;
+	font-size: 18px;
+}
+
+.box4 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	width: 100vw;
+	height: auto;
+	background: var(--box2Color);
+	color: var(--box1Color);
+}
+
+.content-box4 {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.rodape h2, .rodape h3 {
+	margin: 20px 10px;
+	text-align: center;
+	color: rgb(32, 32, 32);
+}
+
+.rodape-img img {
+	width: 200px;
+}
+
+.last-menu {
+	margin: 30px;
+}
+
+.last-menu li {
+	margin: 5px 0;
+	padding: 10px;
+}
+
+.last-menu li a {
+	padding: 10px 0;
+	color: rgb(32, 32, 32);
+	border: 0 hidden var(--box2Color);
+	border-radius: 4px;
+}
+
+.last-menu li a:hover {
+	background: white;
+	transition-duration: 1000ms;
+}
